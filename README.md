@@ -120,7 +120,7 @@ Este código implementa um sistema de medicação automatizado com um compartime
     Posiciona o servo motor na posição inicial (compartimento fechado).
 </p>
 <p>
-    <h3> Função Loop: <h3>
+    <h3> Função Loop: </h3>
     Verifica se é hora de administrar o medicamento chamando a função medicamentoProgramado.
     Se for hora, chama as funções alertaSonoro, aguardarConfirmacao e fecharCompartimento.
     Atualiza as informações no display LCD chamando a função atualizarLCD.
