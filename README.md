@@ -1,6 +1,6 @@
 <div align='center'>
     <br>
-    <h1> Sensor de Monitoramento de Remédio </h1>
+    <h1>  Sistema de Medicação com Compartimento Automático e Alerta Sonoro </h1>
 </div>
 
 <br> 
