@@ -95,11 +95,11 @@ Este código implementa um sistema de medicação automatizado com um compartime
 </p>
 <p>
     <h3> Pins de Conexão:</h3>
-    Pino 9: Conectado ao servo motor.
-    Pinos 12, 11, 5, 4, 3, 2: Conectados ao display LCD.
-    Pino 8: Conectado ao LED indicador.
-    Pino 10: Conectado ao buzzer.
-    Pino 7: Conectado ao botão de confirmação.
+    <p> Pino 9: Conectado ao servo motor.</P>
+    <p> Pinos 12, 11, 5, 4, 3, 2: Conectados ao display LCD.</p>
+    <p> Pino 8: Conectado ao LED indicador.</p>
+    <p> Pino 10: Conectado ao buzzer. </p>
+    <p> Pino 7: Conectado ao botão de confirmação.</p>
 </p>
 <p>
     <h3> Constantes: </h3>
