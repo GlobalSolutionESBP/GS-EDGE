@@ -67,9 +67,7 @@ Este código implementa um sistema de medicação automatizado com um compartime
 | 1          | 10kΩ Resistor                 |
 | 1          | 1kΩ Resistor                  |
 </div>
-<div align="right">
-    <img href="https://github.com/GlobalSolutionESBP/GS-EDGE/blob/main/SimuladorMedicamentos.png">
-</div>
+<img height="385em" align="right" src="https://github.com/GlobalSolutionESBP/GS-EDGE/blob/main/SimuladorMedicamentos.png"> Circuito
 </details>
 <details>
 <summary> Link TinkerCad</summary>
