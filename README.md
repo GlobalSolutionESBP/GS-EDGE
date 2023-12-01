@@ -73,7 +73,7 @@ Este código implementa um sistema de medicação automatizado com um compartime
 
 <details>
 <summary> Circuito </summary>
-<img height="200em" align="center" src="https://github.com/GlobalSolutionESBP/GS-EDGE/blob/main/SimuladorMedicamentos.png">
+<img height="385em" align="center" src="https://github.com/GlobalSolutionESBP/GS-EDGE/blob/main/SimuladorMedicamentos.png">
 </details>
 
 <details>
@@ -154,7 +154,7 @@ Este código implementa um sistema de medicação automatizado com um compartime
     Atualiza o display LCD com o tempo restante até a próxima dose.
     Calcula horas e minutos com base no tempo restante.
 </p>
-<h1> Notas Importantes: <h1>
+<h1> Notas Importantes: </h1>
 
 Certifique-se de conectar os componentes aos pinos corretos conforme definido no código.
 O buzzer é ativado durante a espera pelo botão e também após cada confirmação.
