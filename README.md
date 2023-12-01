@@ -68,7 +68,7 @@ Este código implementa um sistema de medicação automatizado com um compartime
 | 1          | 1kΩ Resistor                  |
 </div>
 <div align="right">
-    <img href="./SimuladorMEdicamentos.png">
+    <img href="https://github.com/GlobalSolutionESBP/GS-EDGE/blob/main/SimuladorMedicamentos.png">
 </div>
 </details>
 <details>
@@ -80,6 +80,8 @@ Este código implementa um sistema de medicação automatizado com um compartime
 
 <details>
 <summary>Documentação Código</summary>
+<p>
+</p>
 </details>
 <details>
 <summary>Link Youtube</summary>
