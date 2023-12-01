@@ -44,12 +44,14 @@ Os impactos do esquecimento vão além da eficácia do tratamento, estendendo-se
 A implementação de um Sistema de Medicação com Compartimento Automático e Alerta Sonoro oferece várias vantagens, especialmente para pessoas que precisam seguir uma rotina regular de medicação. 
 </p>
 </details>
-<details open>
+
+<details>
 <summary> Descrição Geral</summary>
 <p>
 Este código implementa um sistema de medicação automatizado com um compartimento que se abre no horário programado e emite um alerta sonoro. O usuário deve pressionar um botão para confirmar a administração do medicamento. O próximo alerta é programado após a confirmação, e o tempo restante até a próxima dose é exibido em um display LCD.
 </p>
 </details>
+
 <details>
 <summary> Hardware</summary>
 <div align="center">
@@ -68,10 +70,12 @@ Este código implementa um sistema de medicação automatizado com um compartime
 | 1          | 1kΩ Resistor                  |
 </div>
 </details>
+
 <details>
 <summary> Circuito </summary>
 <img height="200em" align="center" src="https://github.com/GlobalSolutionESBP/GS-EDGE/blob/main/SimuladorMedicamentos.png">
 </details>
+
 <details>
 <summary> Link TinkerCad</summary>
 <ul>
@@ -82,8 +86,86 @@ Este código implementa um sistema de medicação automatizado com um compartime
 <details>
 <summary>Documentação Código</summary>
 <p>
+    <h3> Componentes Necessários: </h3>
+    Servo motor para controlar a abertura e fechamento do compartimento.
+    Display LCD para mostrar informações ao usuário.
+    LED para indicar visualmente o status do sistema.
+    Buzzer para o alerta sonoro.
+    Botão para a confirmação da administração do medicamento.
+</p>
+<p>
+    <h3> Pins de Conexão:</h3>
+    Pino 9: Conectado ao servo motor.
+    Pinos 12, 11, 5, 4, 3, 2: Conectados ao display LCD.
+    Pino 8: Conectado ao LED indicador.
+    Pino 10: Conectado ao buzzer.
+    Pino 7: Conectado ao botão de confirmação.
+</p>
+<p>
+    <h3> Constantes: </h3>
+    intervaloMedicamento: Intervalo entre doses de medicamento (8 horas).
+    intervaloMedicamento2: Intervalo inicial para começar a simulação (7 segundos).
+    intervaloAlerta: Intervalo entre alertas sonoros (3 segundos).
+</p>
+<p>
+    <h3> Variáveis: </h3>
+    proximaDose: Armazena o tempo em milissegundos da próxima dose.
+    proximoAlerta: Armazena o tempo em milissegundos do próximo alerta sonoro.
+    alertaAtivo: Indica se o alerta sonoro está ativo.
+</p>
+<p>
+    <h3> Função Setup: </h3>
+    Inicializa o display LCD, o servo motor e os pinos de entrada/saída.
+    Configura os tempos iniciais para a próxima dose e próximo alerta.
+    Posiciona o servo motor na posição inicial (compartimento fechado).
+</p>
+<p>
+Função Loop:
+
+Verifica se é hora de administrar o medicamento chamando a função medicamentoProgramado.
+Se for hora, chama as funções alertaSonoro, aguardarConfirmacao e fecharCompartimento.
+Atualiza as informações no display LCD chamando a função atualizarLCD.
+</p>
+<p>
+Função medicamentoProgramado:
+
+Verifica se o tempo atual é maior ou igual ao tempo programado para a próxima dose.
+Se verdadeiro, atualiza o tempo da próxima dose, ativa o alerta e programa o próximo alerta.
+</p>
+<p>
+<h3>Função abrirCompartimento:</h3>
+Abre o compartimento movendo o servo motor para a posição de abertura.
+</p>
+<p>
+<h3>Função alertaSonoro:</h3>
+Exibe a mensagem "HORA DO MEDICAMENTO" no display LCD.
+Ativa o alerta sonoro e aguarda 3 segundos antes de desativar.
+</p>
+<p>
+    <h3>Função aguardarConfirmacao: </h3>
+    Exibe a mensagem "Pressione o botao" no display LCD.
+    Aguarda a confirmação do botão para prosseguir.
+    Durante a espera, programa o próximo alerta se o tempo atual for maior ou igual ao próximo alerta.
+</p>
+<p>
+    <h3> Função fecharCompartimento: </h3>
+    Fecha o compartimento movendo o servo motor para a posição de fechamento.
+</p>
+<p>
+    <h3> Função atualizarLCD: </h3>
+    Atualiza o display LCD com o tempo restante até a próxima dose.
+    Calcula horas e minutos com base no tempo restante.
+</p>
+<h1> Notas Importantes: <h1>
+
+Certifique-se de conectar os componentes aos pinos corretos conforme definido no código.
+O buzzer é ativado durante a espera pelo botão e também após cada confirmação.
+O sistema continuará operando em um loop, administrando medicamentos e emitindo alertas até ser desligado.
+Observações:
+Este código é projetado para fins educacionais e de simulação. Sempre siga as orientações médicas ao administrar medicamentos. Certifique-se de que os tempos de intervalo e doses se adequam às necessidades específicas de saúde do usuário.
 </p>
 </details>
+
 <details>
 <summary>Link Youtube</summary>
 <li><a href="#"> Vídeo Explicativo </a</li>
