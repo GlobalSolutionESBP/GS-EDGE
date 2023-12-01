@@ -120,26 +120,24 @@ Este código implementa um sistema de medicação automatizado com um compartime
     Posiciona o servo motor na posição inicial (compartimento fechado).
 </p>
 <p>
-Função Loop:
-
-Verifica se é hora de administrar o medicamento chamando a função medicamentoProgramado.
-Se for hora, chama as funções alertaSonoro, aguardarConfirmacao e fecharCompartimento.
-Atualiza as informações no display LCD chamando a função atualizarLCD.
+    <h3> Função Loop: <h3>
+    Verifica se é hora de administrar o medicamento chamando a função medicamentoProgramado.
+    Se for hora, chama as funções alertaSonoro, aguardarConfirmacao e fecharCompartimento.
+    Atualiza as informações no display LCD chamando a função atualizarLCD.
 </p>
 <p>
-Função medicamentoProgramado:
-
-Verifica se o tempo atual é maior ou igual ao tempo programado para a próxima dose.
-Se verdadeiro, atualiza o tempo da próxima dose, ativa o alerta e programa o próximo alerta.
+    <h3> Função medicamentoProgramado: </h3>
+    Verifica se o tempo atual é maior ou igual ao tempo programado para a próxima dose.
+    Se verdadeiro, atualiza o tempo da próxima dose, ativa o alerta e programa o próximo alerta.
 </p>
 <p>
-<h3>Função abrirCompartimento:</h3>
-Abre o compartimento movendo o servo motor para a posição de abertura.
+    <h3>Função abrirCompartimento:</h3>
+    Abre o compartimento movendo o servo motor para a posição de abertura.
 </p>
 <p>
-<h3>Função alertaSonoro:</h3>
-Exibe a mensagem "HORA DO MEDICAMENTO" no display LCD.
-Ativa o alerta sonoro e aguarda 3 segundos antes de desativar.
+    <h3>Função alertaSonoro:</h3>
+    Exibe a mensagem "HORA DO MEDICAMENTO" no display LCD.
+    Ativa o alerta sonoro e aguarda 3 segundos antes de desativar.
 </p>
 <p>
     <h3>Função aguardarConfirmacao: </h3>
