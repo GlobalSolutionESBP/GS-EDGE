@@ -166,7 +166,7 @@ Este código é projetado para fins educacionais e de simulação. Sempre siga a
 
 <details>
 <summary>Link Youtube</summary>
-<li><a href="#"> Vídeo Explicativo </a</li>
+<li><a href="https://youtu.be/3e1_I_sgo6U"> Vídeo Explicativo </a</li>
 </details>
 
 
